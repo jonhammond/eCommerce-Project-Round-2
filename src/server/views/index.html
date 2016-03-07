@@ -7,8 +7,82 @@
 
   <div class="container">
 
-    <h1>{{ title }}</h1>
-    <p>Welcome to {{ title }}</p>
+    <!-- Carousel -->
+  <div class="container">
+    <div class="container2">
+      <style>
+      #myCarousel .slider-size {
+        height: 300px;
+        width: 100%;
+      }
+      </style>
+      <div id="myCarousel" height="100px" class="carousel slide" data-ride="carousel">
+
+    <!-- Wrapper for carousel slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active slider-size">
+            <img class="cimg" src="images/colorbears.jpg" class="col-md-12" height="100px" width="100%">
+          </div>
+          <div class="item slider-size">
+            <img class="cimg" src="images/oversized.jpg" class="col-md-12" height="100px" width="100%">
+          </div>
+        </div>
+
+    <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+      </div>
+    </div>
+
+    <h2 align="center"><a href="/products">Products</a></h2>
+
+    <!-- Carousel Images -->
+    <div>
+        <figure class="col-l-3; col-md-4; col-sm-4; col-xs-4 text-center">
+          <img src="images/product1.jpg" align="center" style="height:200px; width:200px">
+          <figcaption>Confused</figcaption>
+          <figcaption>$60.00</figcaption>
+          <figcaption>★★★★★</figcaption>
+          <button class="btn btn-primary" id="red">Add to Cart</button>
+        </figure>
+
+        <figure class="col-l-3; col-md-4; col-sm-4; col-xs-4 text-center">
+          <img src="images/product2.jpg" style="height:200px; width:200px">
+          <figcaption>Agatha</figcaption>
+          <figcaption>$10.00</figcaption>
+          <figcaption>★★★★★</figcaption>
+          <button class="btn btn-primary" id="elephant">Add to Cart</button>
+        </figure>
+
+        <figure class="col-l-3; col-md-4; col-xs-4 text-center">
+          <img src="images/product3.jpg" style="height:200px; width:200px">
+          <figcaption>Jeff</figcaption>
+          <figcaption>$25.00</figcaption>
+          <figcaption>★★★★★</figcaption>
+          <button class="btn btn-primary" id="panda">Add to Cart</button>
+        </figure>
+    </div>
+
+    <!-- Email Signup Form -->
+    <div class="bg-primary" style="padding-top:10px;padding-bottom:10px;margin-top:25px;display:inline-block">
+      <h2 align="center">Signup Today!</h2>
+      <p style="margin:10px">
+        Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
+      </p>
+      <form onSubmit="validate(); return false;" action="#">
+        <input id="emailInput" type="text" name="email" placeHolder="Email" style="width:65%;margin:10px">
+        <input id="emailSubmit" type="submit" value="Signup" style="width:30%">
+      </form>
+    </div>
+
+  </div>
 
   </div>
 
