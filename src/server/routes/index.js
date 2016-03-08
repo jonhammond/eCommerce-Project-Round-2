@@ -15,4 +15,16 @@ router.get('/products', function(req, res, next) {
   res.render('products', { title: 'Plush Palace' });
 });
 
+router.get('/profile', function(req, res, next) {
+  res.render('profile', { title: 'My Account' });
+});
+
+router.get('/edit-account', function(req, res, next) {
+  res.render('account', { title: 'Edit Account' });
+});
+
+router.get('/new-account', function(req, res, next) {
+  res.render('account', { title: 'Create Account' });
+});
+
 module.exports = router;
